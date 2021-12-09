@@ -1,0 +1,192 @@
+body {
+    background-color: #fafafa;
+}
+.s-instagram {
+    max-width: 850px;
+    width: 100%;
+    display: flex;
+    margin: 32px auto 0;
+    justify-content: space-around;
+    padding-bottom: 32px;
+    align-items: center;
+}
+
+@media (max-width: 650px) {
+    .s-instagram {
+        max-width: 100%;
+    } 
+
+    .s-instagram-img {
+        display: none;
+    }
+
+}
+
+.s-instagram-img {
+    width: 454px;
+    height: 600px;
+}
+
+.s-instagram-img img {
+    height: auto;
+    width: 90%;
+}
+.s-instagram-form {
+    width: 350px;
+    text-align: center;
+}
+
+.s-instagram-form-group {
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    margin-bottom: 12px;
+    
+}
+
+.s-instagram-form-group h1 {
+    font-size: 40px;
+}
+
+.s-instagram-form-group form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.s-instagram-form-group form input {
+    background-color: #fafafa;
+    padding: 9px 0 7px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+
+.s-instagram-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.s-instagram-info a{
+   width: 40%;
+   font-weight: 600;
+}
+
+.s-instagram-info .senha-not {
+    text-decoration: none;
+    color: #385185;
+    font-size: 13px;
+}
+
+
+.s-instagram-form-group  span{
+    position: relative;
+    font-size: 13px;
+    margin-bottom: 24px;
+    color: #ab908e;
+    font-weight: 600;
+}
+
+.s-instagram-form span::after{
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    width: 120px;
+    height: 1px;
+    background-color:#ccc;
+    content: '';
+}
+
+.s-instagram-form span::before {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 120px;
+    height: 1px;
+    background-color:#ccc;
+    content: '';
+}
+
+
+.btn {
+    background-color: #b2dffc;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 40px;
+    text-decoration: none;
+}
+
+/*DEFINDO O POSICIONAMENTO DO ICONE*/
+.btn--icone {
+    padding-left: 3.5rem;
+    background-repeat: no-repeat;
+    background-position: left 1.75rem center;
+}
+
+/*MOSTRANDO O ICONE*/
+.btn--facebook {
+    background-image: url(./images/facebook.png);
+    background-size: 10%;
+    background-color: transparent;
+    color: #385185;
+}
+
+.s-instragram-form-app-icones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s-instragram-form-app-icones img {
+    width: 130px;
+    height: auto;
+    object-fit: cover;
+}
+
+.rodape {
+    max-width: 850px;
+    width: 100%;
+    margin: auto;
+}
+
+.rodape .menu {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
+}
+
+.rodape .menu li {
+    list-style: none;
+    color: #8e8e8e;
+    font-size: 12px;
+    margin-right: 12px;
+    
+}
+
+@media (max-width: 650px) {
+    .s-instagram {
+        max-width: 100%;
+    } 
+
+    .s-instagram-img {
+        display: none;
+    }
+
+    .rodape {
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    .rodape .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape .menu li {
+        letter-spacing: 5px;
+    }
+}
